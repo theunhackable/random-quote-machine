@@ -1,6 +1,6 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
+*{
+    margin:0;
+    box-sizing: border-box;
 }
 body {
   background-color: #222;
@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 40px black;
+  min-height: 500px;
 }
 #text {
   font-size: 40px;
@@ -40,14 +41,12 @@ body {
   box-shadow: 0px 0px 5px black;
 }
 #tweet-wrapper {
-  margin-top: 2rem;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  
-  
-
+  position:static;
+  bottom: 0;
 }
 
 a {
@@ -58,45 +57,42 @@ svg:hover {
   width: 30px;
 }
 
-#dev-info {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 30px; /* Height of the footer */
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  color: white;
-  background-color: #0081c9;
+
+#dev-info{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;   /* Height of the footer */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: #0081C9;
 }
 
-footer > * {
-  margin-right: 20px;
+footer > *{
+    margin-right: 20px;
 }
-footer a {
-  display: inline;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer img {
-  display: inline;
-  background: #fff;
-  height: 20px;
-  width: auto;
-  border-radius: 5px;
-  margin-right: 5px;
+footer a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
 }
 
-#footer-img-wrapper {
-  display: flex;
+footer img{
+    display: inline;
+    background: #fff;
+    height:20px;
+    width: auto;
+    border-radius: 5px;
+    margin-right: 5px;
 }
 
-@media only screen and (max-width: 600px) {
-  #quote-box{
-    width: 200px;
-    height: 200px;
-  }
-}
 
+
+#footer-img-wrapper{
+    display: flex;
+    
+}
